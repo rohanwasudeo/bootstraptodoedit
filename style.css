@@ -1,0 +1,98 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  transition: background 0.3s;
+}
+.card {
+  border-radius: 1rem;
+}
+#todo-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+.list-group-item {
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.list-group-item.completed {
+  text-decoration: line-through;
+  color: #adb5bd;
+  background: #f1f3f5;
+}
+.list-group-item:hover {
+  background: #f0f4ff;
+}
+.delete-btn {
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+.delete-btn:hover {
+  opacity: 1;
+  color: #dc3545;
+}
+@media (max-width: 576px) {
+  .card {
+    border-radius: 0.5rem;
+  }
+}
+
+/* Dark theme styles */
+body.dark-theme {
+  background: linear-gradient(135deg, #181a1b 0%, #23272f 100%) !important;
+  color: #f1f3f5;
+}
+body.dark-theme .card {
+  background: #23272f;
+  color: #f1f3f5;
+  border-color: #23272f;
+}
+body.dark-theme .form-control {
+  background: #23272f;
+  color: #f1f3f5;
+  border-color: #343a40;
+}
+body.dark-theme .form-control:focus {
+  background: #23272f;
+  color: #f1f3f5;
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+body.dark-theme .list-group-item {
+  background: #23272f;
+  color: #f1f3f5;
+  border-color: #343a40;
+}
+body.dark-theme .list-group-item.completed {
+  background: #23272f;
+  color: #6c757d;
+}
+body.dark-theme .list-group-item:hover {
+  background: #232b36;
+}
+body.dark-theme .btn-outline-danger {
+  color: #f87171;
+  border-color: #f87171;
+}
+body.dark-theme .btn-outline-danger:hover {
+  background: #f87171;
+  color: #fff;
+  border-color: #f87171;
+}
+body.dark-theme .btn-primary {
+  background: #0d6efd;
+  border-color: #0d6efd;
+}
+body.dark-theme .btn-outline-secondary {
+  color: #f1f3f5;
+  border-color: #6c757d;
+}
+body.dark-theme .btn-outline-secondary:hover {
+  background: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+}
+body.dark-theme .text-muted {
+  color: #adb5bd !important;
+}
+body.dark-theme .is-invalid {
+  border-color: #dc3545;
+}
